@@ -11,12 +11,18 @@
     <meta name="refresh" content="3; url=LapoLegal.pl">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script defer src="./js/main.js"></script>
     <title>Лёгкая легализация в Польше</title>
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header open">
         <div class="container">
+            <button class="header__btn" id="burger">
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+            </button>
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
@@ -45,9 +51,9 @@
         <section class="welcome">
             <div class="container">
                 <div class="title">
-                    <img class="title__left-img" src= "img/welcome.jpg" alt="Девушка с длинными волосами">
+                    <img class="title__left-img" src= "img/welcome.jpg" alt="Задумчивая девушка с длинными волосами">
                     <h1 class="title__right"><span class="title__right-top" >Специалист по легализации в Польше.</span><br>Anastazja Łapo</h1>
-                    <h2 class="title__botton">Ваше спокойствие — мой приоритет. <br>Я контролирую процесс на всех стадиях и устраняю все возможные препятствия.</h2>
+                    <h2 class="title__bottom">Ваше спокойствие — мой приоритет. <br>Я контролирую процесс на всех стадиях и устраняю все возможные препятствия.</h2>
                 </div>
             </div>
         </section>
@@ -85,116 +91,89 @@
                     <ul class="services__list">
                         <li class="services__item">
                             <div class="card">
-                                <div class="card__container-img">
-                                    <img class="card__img" src="./img/44.jpg">
-                                </div>
-                                <div class="card__body">
-                                    <h4 class="card__body-title">
-                                        Консультация по вопросам:
-                                    </h4>
-                                    <ul class="card__body-description">
-                                        <li class="card__body-item">
-                                            ✔️легализации в Польше, получения ВНЖ/ПМЖ, Карты Поляка, легализации рождённого ребёнка в Польше, налогов в Польше, 
-                                            получения пособий на детей, аренды жилья, 
-                                            переезда из РБ в Польшу с детьми и животными, открытия малого и среднего бизнеса, покупки недвижимости иностранцами, решения административных вопросов, взаимоотношений наниматель-работник и много другое.
-                                        <li>   
-                                    </ul>
-                                </div>
+                                <img class="card__img" src="./img/44.jpg" alt="Лицо спящей девушки с длинными волосами">
+                                <h4 class="card__title">
+                                    Консультация по вопросам:
+                                </h4>
+                                <ul class="card__list">
+                                    <li class="card__item">✔️легализации в Польше, получения ВНЖ/ПМЖ, Карты Поляка, легализации рождённого ребёнка в Польше, налогов в Польше, 
+                                    получения пособий на детей, аренды жилья, 
+                                    переезда из РБ в Польшу с детьми и животными, открытия малого и среднего бизнеса, покупки недвижимости иностранцами, решения административных вопросов, взаимоотношений наниматель-работник и много другое.<li>   
+                                </ul>
                             </div>
                         </li>
                         <li class="services__item">
                             <div class="card">
-                                <div class="card__top">
-                                    <img class="card__img" src="./img/37.jpg">
-                                </div>
-                                <div class="card__body">
-                                    <h4 class="card__body-title">
+                                <img class="card__img" src="./img/37.jpg" alt="Лицо девушки с закрытыми глазами">
+                                <h4 class="card__title">
                                         Легализация:
-                                    </h4>
-                                    <ul class="card__body-description">
-                                        <li class="card__body-item">✔️Подготовка документов на ВНЖ/ПМЖ;</li>
-                                        <li class="card__body-item">✔️Подготовка документов на Польский ДП;</li>
-                                        <li class="card__body-item">✔️Подготовка документов на воеводское     
-                                        приглашение;</li>
-                                        <li class="card__body-item">✔️Подготовка документов на Карту Поляка;</li>
-                                        <li class="card__body-item">✔️Подготовка документов для получения Польского гражданства;</li>
-                                        <li class="card__body-item">✔️Подготовка нотариальной доверенности для РБ.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                                </h4>
+                                <ul class="card__list">
+                                    <li class="card__item">✔️Подготовка документов на ВНЖ/ПМЖ;</li>
+                                    <li class="card__item">✔️Подготовка документов на Польский ДП;</li>
+                                    <li class="card__item">✔️Подготовка документов на воеводское   приглашение;</li>
+                                    <li class="card__item">✔️Подготовка документов на Карту Поляка;</li>
+                                    <li class="card__item">✔️Подготовка документов для получения Польского гражданства;</li>
+                                    <li class="card__item">✔️Подготовка нотариальной доверенности для РБ.</li>
+                                </ul>
+                             </div>
                         </li>
                         <li class="services__item">
                             <div class="card">
-                                <div class="card__top">
-                                    <img class="card__img" src="./img/45.jpg">
-                                </div>
-                                <div class="card__body">
-                                   <h4 class="card__body-title">
+                                 <img class="card__img" src="./img/45.jpg" alt="Лицо улыбающейся девушки с закрытыми глазами">
+                                <h4 class="card__title">
                                         Малый/средний бизнес:
-                                    </h4>
-                                    <ul class="card__body-description">
-                                        <li class="card__body-item">✔️Открытие JDG (ИП)с выбором системы налогообложения;</li>
-                                        <li class="card__body-item">✔️Открытие Spółki z o.o. (ООО) под ключ;</li>
-                                        <li class="card__body-item">✔️Рекомендация по работе с бухгалтером;</li>
-                                        <li class="card__body-item">✔️Регистрация товарного знака на территории Польши (ЕС);</li>
-                                        <li class="card__body-item">✔️Подача декларации PIT.</li>
-                                    </ul>
-                                </div>
+                                </h4>
+                                <ul class="card__list">
+                                    <li class="card__item">✔️Открытие JDG (ИП)с выбором системы налогообложения;</li>
+                                    <li class="card__item">✔️Открытие Spółki z o.o. (ООО) под ключ;</li>
+                                    <li class="card__tem">✔️Рекомендация по работе с бухгалтером;</li>
+                                    <li class="card__item">✔️Регистрация товарного знака на территории Польши (ЕС);</li>
+                                    <li class="card__item">✔️Подача декларации PIT.</li>
+                                </ul>
                             </div>
                         </li>
                         <li class="services__item">
                             <div class="card">
-                                <div class="card__top">
-                                    <img class="card__img" src="./img/38.jpg">
-                                </div>
-                                <div class="card__body">
-                                    <h4 class="card__body-title">
-                                        Недвижимость:
-                                    </h4>
-                                    <ul class="card__body-description">
-                                        <li class="card__body-item">✔️Консультация: «Как снять квартиру самостоятельно и без ошибок»;</li>
-                                        <li class="card__body-item">✔️Консультация: «Как купить недвижимость иностранцу»;</li>
-                                        <li class="card__body-item">✔️Рекомендация по работе с бухгалтером;</li>
-                                        <li class="card__body-item">✔️Помощь в выборе недвижимости на первичном рынке у застройщиков. (ЕС);</li>
-                                        </ul>
-                                </div>
+                                <img class="card__img" src="./img/38.jpg" alt="Лицо девушки с пронзительным взглядом">
+                                 <h4 class="card__title">
+                                    Недвижимость:
+                                </h4>
+                                <ul class="card__list">
+                                    <li class="card__item">✔️Консультация: «Как снять квартиру самостоятельно и без ошибок»;</li>
+                                    <li class="card__item">✔️Консультация: «Как купить недвижимость иностранцу»;</li>
+                                    <li class="card__item">✔️Рекомендация по работе с бухгалтером;</li>
+                                    <li class="card__item">✔️Помощь в выборе недвижимости на первичном рынке у застройщиков. (ЕС);</li>
+                                </ul>
                             </div>
                         </li>
                         <li class="services__item">
                             <div class="card">
-                                <div class="card__top">
-                                    <img class="card__img" src="./img/41.jpg">
-                                </div>
-                                <div class="card__body">
-                                     <h4 class="card__body-title">
-                                        Договорная работа:
-                                    </h4>
-                                    <ul class="card__body-description">
-                                        <li class="card__body-item">✔️Правовая экспертиза трудовых и гражданских договоров;<li>
-                                        <li class="card__body-item">✔️Составление трудовых и гражданских договоров.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                                <img class="card__img" src="./img/41.jpg" alt="Лицо девушки со спокойным взглядом">
+                                <h4 class="card__title">
+                                    Договорная работа:
+                                </h4>
+                                <ul class="card__list">
+                                    <li class="card__item">✔️Правовая экспертиза трудовых и гражданских договоров;<li>
+                                    <li class="card__item">✔️Составление трудовых и гражданских договоров.</li>
+                                </ul>
+                             </div>
                         </li>
                         <li class="services__item">
                             <div class="card">
-                                <div class="card__top">
-                                    <img class="card__img" src="./img/42.jpg">
-                                </div>
-                                <div class="card__body">
-                                    <h4 class="card__body-title">
-                                        Дополнительно:
-                                    </h4>
-                                    <ul class="card__body-description">
-                                        <li class="card__body-item">✔️Услуги бухгалтера: ИП и ООО;</li>
-                                        <li class="card__body-item">✔️Страховки в Польше;</li>
-                                        <li class="card__body-item">✔️Запись в визовые центры РБ;</li>
-                                        <li class="card__body-item">✔️Предоставление польского адреса;(ЕС);</li>
-                                        <li class="card__body-item">✔️ Резервация даты на личную подачу по всей Польше: ВНЖ/ПМЖ, Карта поляка, Гражданство, воеводское приглашение.</li>
-                                        </ul>
-                                </div>
+                                <img class="card__img" src="./img/42.jpg" alt="Лицо девушки с сексуальным взглядом">
+                                <h4 class="card__title">
+                                     Дополнительно:
+                                </h4>
+                                <ul class="card__list">
+                                    <li class="card__item">✔️Услуги бухгалтера: ИП и ООО;</li>
+                                    <li class="card__item">✔️Страховки в Польше;</li>
+                                    <li class="card__item">✔️Запись в визовые центры РБ;</li>
+                                    <li class="card__item">✔️Предоставление польского адреса; (ЕС);</li>
+                                    <li class="card__item">✔️ Резервация даты на личную подачу по всей Польше: ВНЖ/ПМЖ, Карта поляка, Гражданство, воеводское приглашение.</li>
+                                </ul>
                             </div>
-                          </li>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -257,7 +236,7 @@
                             </tr>
                         </tbody>
                         <caption>
-                            <span class="price__caption-title">*Подробно о   ценах можете узнать по телефону</span> +48571086455
+                            <span class="price__caption-title">*Подробно о ценах можете узнать по телефону</span> +48571086455
                         </caption>    
                     </table>  
                 </div>
@@ -306,17 +285,17 @@
         </section>  
         <footer>
             <div class="container">
-                 <div class="footer" id="footer">
+                <div class="footer" id="footer">
                     <div class="footer__elements">
                         <nav class="footer__elements-nav">
                             <a class ="footer__elements-link" href="#header">
                                 <img class="footer__elements-logo" src="./img/_logo_LEGAL_white_horizontal.svg" alt="Логотип">
                             </a>
                         </nav>
-                        <button class="footer__btn">
-                            
-                        </button>
-                        <a class="footer__elements-icon" href="https://www.instagram.com/lapoanastazja" target="_blank">
+                        <div class="footer__btn">
+                            <a href="https://buycoffee.to/lapoanastazja?fbclid=PAZXh0bgNhZW0CMTEAAad2hgCPxLBaYpdYDwSdQhfCjnMqEx8HkSU8_BHEsgKM4lktY4ZiMdXd9QZZwQ_aem_j39LiT2OoTdumFRP2rd9cQ" class="footer__btn-link" target="_blank">Купить виртуальный кофе</a>
+                        </div>
+                        <a class="footer__elements-icon inst" href="https://www.instagram.com/lapoanastazja" target="_blank">
                             <img src="./img/instagram_icon_225454.svg" alt="Инстаграмм">
                         </a>
                         <a class="footer__elements-icon" href="https://t.me/AnastaziALappo" target="_blank">
@@ -328,7 +307,7 @@
                          <p class="footer__elements-mark">
                             © Anastazja Łapo. Все права защищены.
                         </p>
-                        <a class="footer__elements-tel" href= "tel: +48571086455">
+                        <a class="footer__elements-tel" href= "tel:+48571086455">
                             (+48) 571-086-455
                         </a> 
                     </div> 
